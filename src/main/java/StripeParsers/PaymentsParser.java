@@ -66,7 +66,7 @@ public class PaymentsParser {
             for(String majorpart: majorparts){
 
                String majorRes = compressMajorPart(majorpart,minorcount);
-               while(getMinorcount(majorRes) > minorcount){
+               if(getMinorcount(majorRes) > minorcount){
                    majorRes = compressMajorPart(majorRes,minorcount);
                }
                res.add(majorRes);
@@ -94,7 +94,7 @@ public class PaymentsParser {
         }
 
         private static int getMinorcount(String s) {
-            String[] minorstring  = s.split(".");
+            String[] minorstring  = s.split("\\.");
             return minorstring.length;
         }
 

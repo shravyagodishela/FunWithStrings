@@ -1,0 +1,5 @@
+TXN001,Visa,fraud,2024-02-01,150.75
+TXN002,MasterCard,chargeback,2024-02-02,299.99
+TXN003,Amex,withdrawn,2024-02-03,75.50
+TXN001,Visa,withdrawn,2024-02-04,150.75
+TXN004,MasterCard,fraud,2024-02-05,200.00
