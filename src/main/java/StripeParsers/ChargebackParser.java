@@ -32,6 +32,7 @@ public class ChargebackParser {
         List<Dispute> res = new ArrayList<>();
 
         BufferedReader bufferedReader = new BufferedReader(new FileReader(filename));
+        String headerline  = bufferedReader.readLine();
         String line;
         while( (line = bufferedReader.readLine()) !=null){
 
